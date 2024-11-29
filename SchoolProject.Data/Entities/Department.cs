@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
+#nullable disable
+
 namespace SchoolProject.Data.Entities
 {
     public class Department
