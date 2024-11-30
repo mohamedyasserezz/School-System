@@ -13,7 +13,7 @@ namespace SchoolProject.Infrastructure.Repositories
 
         #region Methods
         public async Task<List<Student>> GetAllStudentsAsync()
-        => await _dbContext.Students.ToListAsync(); 
+        => await _dbContext.Students.Include(S => S.Department).ToListAsync();
         #endregion
     }
 }
